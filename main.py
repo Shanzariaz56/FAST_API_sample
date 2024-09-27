@@ -1,41 +1,52 @@
 from fastapi import FastAPI
+from fastapi import HTTPException
+from schema import Books
+import uuid
 
-app=FastAPI()
+app = FastAPI()
 
-''' make a dummy items '''
-developers=[
-    {'id':1,"name":"shanzy","description":"Django backend developer"},
-    {'id':2,"name":"saira","description":"React Frontend developer"},
+# In-memory list to store books
+books_list = [
+
 ]
-# GET record
-@app.get("/developers")
-def get_data():
-    return developers
 
-# Create/Add new record
-@app.post("/developers/add/")
-def create_developers(name:str,description:str):
-    new_developers={"id":len(developers)+1,"name":name,"description":description}
-    developers.append(new_developers)
-    return {"message":"add new developers successfully","developers":new_developers}
+# GET ALL RECORD
+@app.get("/books/",response_model=list[Books])
+def get_all_books():
+    return books_list
 
-# UPDATE already existing developer
-@app.put("/developers/{developer_id}/")
-def update_developers(developer_id:int, name:str, description:str):
-    for developer in developers:
-        if developer["id"]==developer_id:
-            developer["name"]=name
-            developer["description"]=description
-            return {"message":"update developers successfully","developers":developers}
-    return {"message":"developers not found"}
+# GET SPECIFIC RECORD/ BY ID
+@app.get("/books/{book_id}",response_model=Books)
+def get_book_by_id(book_id:uuid.UUID):
+    for book in books_list:
+        if book.id==book_id:
+            return book
+    return {"message":"books not found"}
 
-# DELETE already existing developer
-@app.delete("/developers/{developer_id}/")
-def delete_developers(developer_id:int):
-    for developer in developers:
-        if developer["id"]==developer_id:
-            developers.remove(developer)
-            return {"message":"delete developers successfully","developers":developers}
-    return {"message":"developers not found"}
+# ADD NEW BOOK
+@app.post("/books/add/",response_model=Books)
+def add_book(book:Books):
+    books_list.append(book)
+    return books_list
+
+# UPDATE ALREADY EXISTING BOOK
+@app.put("books/{book_id}",response_model=Books)
+def update_books(book_id:uuid.UUID,books:Books):
+    for book in books_list:
+        if book.id==book_id:
+            book.title=books.title
+            book.author=books.author
+            book.description=books.description
+            return book
+    raise HTTPException(status_code=404, detail="Book not found")
+
+#DELETE RECORD
+@app.delete("/books/{book_id}")
+def delete_book(book_id:uuid.UUID):
+    for book in books_list:
+        if book.id==book_id:
+            books_list.remove(book)
+    return {"message":"books deleted"}
+
 
 

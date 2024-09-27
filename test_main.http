@@ -5,18 +5,23 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:8000/developers
+GET http://127.0.0.1:8000/books/
 Accept: application/json
 
 ###
-POST http://127.0.0.1:8000/developers/add/
+
+GET http://127.0.0.1:8000/books/{book_id}/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/books/add/
 Content-Type: application/json
 
 ###
-PUT http://127.0.0.1:8000/developers/{developer_id}/
+PUT http://127.0.0.1:8000/books/{book_id}/
 Content-type: application/json
 
 ###
-DELETE http://127.0.0.1:8000/developers/{developer_id}
+DELETE http://127.0.0.1:8000/books/{book_id}
 Content-type: application/json
-

@@ -1,0 +1,50 @@
+[33mcommit 7b223815e618aaf6e145a6b77ebe8ce024f86742[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: d4c2082 58dbfe3
+Author: Shanzariaz56 <148033648+Shanzariaz56@users.noreply.github.com>
+Date:   Tue Oct 1 16:06:57 2024 +0100
+
+    Merge pull request #3 from Shanzariaz56/first
+    
+    Advanced FastAPI Features
+
+[33mcommit 58dbfe3af3b07b2d68e1ddf325a4874d47c4c7d1[m[33m ([m[1;31morigin/first[m[33m)[m
+Author: shanzariaz56 <shanzariaz5656@gmail.com>
+Date:   Tue Oct 1 20:06:55 2024 +0100
+
+    Advanced FastAPI Features
+
+[33mcommit 453b4715ddebc9beb0d9a7bbb4f767bbc9bd578c[m[33m ([m[1;31morigin/friday[m[33m, [m[1;32mfriday[m[33m, [m[1;32mfirst[m[33m)[m
+Author: shanzariaz56 <shanzariaz5656@gmail.com>
+Date:   Fri Sep 27 19:58:10 2024 +0100
+
+    simple API for managing a list of books
+
+[33mcommit aaa98a232ab21ba70f3f663f676c657fdc01776f[m[33m ([m[1;31morigin/tweenty-7[m[33m, [m[1;32mtweenty-7[m[33m)[m
+Author: shanzariaz56 <shanzariaz5656@gmail.com>
+Date:   Fri Sep 27 16:32:51 2024 +0100
+
+    Basic Routing and HTTP Methods
+
+[33mcommit d4c2082fca9ed0a013af3af8fc8b598a64b03f0b[m
+Merge: dd54b02 453b471
+Author: Shanzariaz56 <148033648+Shanzariaz56@users.noreply.github.com>
+Date:   Fri Sep 27 15:59:20 2024 +0100
+
+    Merge pull request #2 from Shanzariaz56/friday
+    
+    simple API for managing a list of books
+
+[33mcommit dd54b027320996d98b0121c3e0b3f90bde20c0c6[m
+Merge: 5810b5c aaa98a2
+Author: Shanzariaz56 <148033648+Shanzariaz56@users.noreply.github.com>
+Date:   Fri Sep 27 12:33:11 2024 +0100
+
+    Merge pull request #1 from Shanzariaz56/tweenty-7
+    
+    Basic Routing and HTTP Methods
+
+[33mcommit 5810b5c40d93c530df1e043afac43c55b2a61536[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Shanzariaz56 <148033648+Shanzariaz56@users.noreply.github.com>
+Date:   Fri Sep 27 10:44:37 2024 +0100
+
+    Initial commit

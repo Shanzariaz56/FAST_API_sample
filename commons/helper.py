@@ -6,9 +6,9 @@
 import jwt
 from datetime import datetime, timedelta
 from fastapi import HTTPException
-from .constants import SIMPLE_JWT,JWT_EXPIRATION_DELTA_MINUTES
 
-def generate_jwt_token(user_id:int,username:str) -> str:
+from commons.constants import SIMPLE_JWT,JWT_EXPIRATION_DELTA_MINUTES
+
     payload={
         "id":user_id,
         "username":username,

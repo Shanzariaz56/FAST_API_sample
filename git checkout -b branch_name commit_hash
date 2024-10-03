@@ -1,0 +1,14 @@
+[33m7b22381[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: checkout: moving from second to main
+[33me241026[m[33m ([m[1;31morigin/second[m[33m, [m[1;32msecond[m[33m)[m HEAD@{1}: commit: Authentication
+[33m453b471[m[33m ([m[1;31morigin/friday[m[33m, [m[1;32mfriday[m[33m, [m[1;32mfirst[m[33m)[m HEAD@{2}: checkout: moving from first to second
+[33m453b471[m[33m ([m[1;31morigin/friday[m[33m, [m[1;32mfriday[m[33m, [m[1;32mfirst[m[33m)[m HEAD@{3}: reset: moving to HEAD~1
+[33m58dbfe3[m[33m ([m[1;31morigin/first[m[33m)[m HEAD@{4}: checkout: moving from first to first
+[33m58dbfe3[m[33m ([m[1;31morigin/first[m[33m)[m HEAD@{5}: reset: moving to HEAD
+[33m58dbfe3[m[33m ([m[1;31morigin/first[m[33m)[m HEAD@{6}: checkout: moving from first to first
+[33m58dbfe3[m[33m ([m[1;31morigin/first[m[33m)[m HEAD@{7}: commit: Advanced FastAPI Features
+[33m453b471[m[33m ([m[1;31morigin/friday[m[33m, [m[1;32mfriday[m[33m, [m[1;32mfirst[m[33m)[m HEAD@{8}: checkout: moving from friday to first
+[33m453b471[m[33m ([m[1;31morigin/friday[m[33m, [m[1;32mfriday[m[33m, [m[1;32mfirst[m[33m)[m HEAD@{9}: commit: simple API for managing a list of books
+[33maaa98a2[m[33m ([m[1;31morigin/tweenty-7[m[33m, [m[1;32mtweenty-7[m[33m)[m HEAD@{10}: checkout: moving from tweenty-7 to friday
+[33maaa98a2[m[33m ([m[1;31morigin/tweenty-7[m[33m, [m[1;32mtweenty-7[m[33m)[m HEAD@{11}: commit: Basic Routing and HTTP Methods
+[33m5810b5c[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{12}: checkout: moving from master to tweenty-7
+[33m5810b5c[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{13}: initial pull

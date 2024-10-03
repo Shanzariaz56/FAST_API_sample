@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, declarative_base
 
 app = FastAPI()
 
@@ -12,8 +11,8 @@ Base = declarative_base()
 # Database configuration using a dictionary (similar to Django)
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
+        "ENGINE": "postgresql",
+        "NAME": "Shanza",
         "USER": "postgres",
         "PASSWORD": "123",
         "HOST": "localhost",
@@ -21,7 +20,8 @@ DATABASES = {
     }
 }
 
-# Construct the connection string manually
+print(DATABASE_URL)
+
 DATABASE_URL = f"postgresql+psycopg2://{DATABASES['default']['USER']}:{DATABASES['default']['PASSWORD']}@" \
                f"{DATABASES['default']['HOST']}:{DATABASES['default']['PORT']}/{DATABASES['default']['NAME']}"
 

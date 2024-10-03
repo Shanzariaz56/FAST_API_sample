@@ -7,4 +7,4 @@ class BookSchema(BaseModel):
     description:str
 
     class Config:
-        orm_mode = True  # Allows ORM objects to be serialized
+        from_attributes = True

@@ -20,13 +20,12 @@ DATABASES = {
     }
 }
 
-# Construct the connection string manually
-DATABASE_URL = f"postgresql://{DATABASES['default']['USER']}:{DATABASES['default']['PASSWORD']}@" \
+print(DATABASE_URL)
+
+DATABASE_URL = f"postgresql+psycopg2://{DATABASES['default']['USER']}:{DATABASES['default']['PASSWORD']}@" \
                f"{DATABASES['default']['HOST']}:{DATABASES['default']['PORT']}/{DATABASES['default']['NAME']}"
 
 # Create an engine and session factory
-print(DATABASE_URL)
-
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

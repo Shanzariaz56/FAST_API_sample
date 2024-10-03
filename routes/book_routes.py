@@ -47,6 +47,13 @@ def login_user(user: UserLogin, db: Session = Depends(get_db)):
 # GET ALL RECORD
 @router.get("/books/",response_model=list[BookSchema])
 @jwt_required_decorator
+from schema.books_schema import BookSchema
+from Database.db import get_db
+
+router = APIRouter()
+
+# GET ALL RECORD
+@router.get("/books/",response_model=list[BookSchema])
 def get_all_books(db:Session=Depends(get_db)):
     books = db.query(Book).all()
     return books

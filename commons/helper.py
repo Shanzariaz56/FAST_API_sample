@@ -6,9 +6,9 @@
 import jwt
 from datetime import datetime, timedelta
 from fastapi import HTTPException
+
 from commons.constants import SIMPLE_JWT,JWT_EXPIRATION_DELTA_MINUTES
 
-def generate_jwt_token(user_id:int,username:str) -> str :
     payload={
         "id":user_id,
         "username":username,
@@ -26,4 +26,3 @@ def decode_jwt_token(token:str) -> int:
         raise HTTPException(status_code=401, detail="Token has expired")
     except jwt.JWTError:
         raise HTTPException(status_code=401, detail="Invalid token")
-

@@ -1,6 +1,8 @@
 from Database.db import DATABASE_URL
 
+
 SECRET_KEY="4567890-0987654345678909876543456789009876789"
+
 
 ''' these are jwt constant and can be use again and again so 
 make all these in separate file and can be use when need like 

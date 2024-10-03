@@ -20,8 +20,6 @@ DATABASES = {
     }
 }
 
-print(DATABASE_URL)
-
 DATABASE_URL = f"postgresql+psycopg2://{DATABASES['default']['USER']}:{DATABASES['default']['PASSWORD']}@" \
                f"{DATABASES['default']['HOST']}:{DATABASES['default']['PORT']}/{DATABASES['default']['NAME']}"
 
